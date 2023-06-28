@@ -6,7 +6,7 @@ import { verifyAdmin } from "../utils/verifyToken.js";
 const router = express.Router();
 
 router.post("/", verifyAdmin, createPropery);
-router.put("/:id", updateProperty);
+router.put("/:id", verifyAdmin, updateProperty);
 router.delete("/:id", verifyAdmin, deleteProperty);
 router.get("/:id", getProperty);
 router.get("/", getallProperty);
