@@ -12,6 +12,10 @@ const PropertySchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    city: {
+        type: String,
+        required: true
+    },
     propertytitle:{
         type: String,
         required: true
@@ -37,7 +41,7 @@ const PropertySchema = new mongoose.Schema({
         required: true
     },
     bhk: {
-        type: Number,
+        type: String,
         required: true
     },
     propertytype: {
@@ -69,7 +73,7 @@ const PropertySchema = new mongoose.Schema({
         required: true
     },
     noofbedrooms: {
-        type: Number,
+        type: String,
         required: true
     },
     bedroomdimensions: {

@@ -18,14 +18,14 @@ const UserSchema = new mongoose.Schema({
       img: {
         type: String,
       },
-      // city: {
-      //   type: String,
-      //   required: true,
-      // },
-      // phone: {
-      //   type: String,
-      //   required: true,
-      // },
+      city: {
+        type: String,
+        required: true,
+      },
+      phone: {
+        type: String,
+        required: true,
+      },
       password: {
         type: String,
         required: true,
