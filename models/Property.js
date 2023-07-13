@@ -1,3 +1,4 @@
+import { Double } from 'mongodb';
 import mongoose from 'mongoose'
 
 const PropertySchema = new mongoose.Schema({
@@ -81,7 +82,7 @@ const PropertySchema = new mongoose.Schema({
         required: true
     },
     price: {
-        type: Number,
+        type: Double,
         required: true
     }
 });
